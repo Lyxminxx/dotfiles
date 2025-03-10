@@ -137,6 +137,7 @@ exec_always swaybg -i ~/Pictures/wallpapers/MarinKitagawa.png -m fill
 #for_window [class="Pcmanfm"] floating enable resize set 900 500
 #for_window [class="Pavucontrol"] floating enable resize set 900 500
 #for_window [class="Blueman-manager"] floating enable resize set 900 500
+exec_always autotiling
 
 # Application bindings
 bindsym $mod+d exec wofi --show drun
@@ -158,3 +159,4 @@ mode "exit: [e]xit, [r]eboot, [s]hutdown, [l]ock" {
 # Logout, reboot, shutdown
 bindsym $mod+x mode "exit: [e]xit, [r]eboot, [s]hutdown, [l]ock"
 
+exec sway-tile
