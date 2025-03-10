@@ -134,7 +134,7 @@ gaps outer 5
 # Autostart
 exec_always swaybg -i ~/Pictures/wallpapers/MarinKitagawa.png -m fill
 exec_always autotiling
-
+exec_always swaync
 # Application bindings
 bindsym $mod+d exec wofi --show drun
 bindsym $mod+t exec alacritty
