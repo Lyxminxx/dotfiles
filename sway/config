@@ -135,6 +135,7 @@ gaps outer 5
 exec_always swaybg -i ~/Pictures/wallpapers/MarinKitagawa.png -m fill
 exec_always autotiling
 exec_always swaync
+
 # Application bindings
 bindsym $mod+d exec wofi --show drun
 bindsym $mod+t exec alacritty
@@ -142,17 +143,20 @@ bindsym $mod+b exec flatpak run app.zen_browser.zen
 bindsym $mod+f exec pcmanfm
 
 # Exit/Shutdown/Lock Menu
-mode "exit: [e]xit, [r]eboot, [s]hutdown, [l]ock" {
+bindsym $mod+x mode "exit: [e]xit, [r]eboot, [s]hutdown, [h]ibernate, [l]ock"
+
+mode "exit: [e]xit, [r]eboot, [s]hutdown, [h]ibernate, [l]ock" {
+    # Define actions for each key
     bindsym e exec swaymsg exit
     bindsym r exec reboot
     bindsym s exec shutdown now
-    bindsym h exec --no-startup-id i3exit hibernate, mode "default"
-    bindsym l exec betterlockscreen -l && systemctl suspend
+    bindsym h exec swaylock -i ~/Pictures/wallpapers/MarinKitagawa.png --inside-color 282a36 --ring-color 50fa7b --key-hl-color ff79c6 --line-color f8f8f2 --text-color f8f8f2 --text-clear-color f8f8f2 --text-caps-lock-color ff79c6 --text-ver-color f8f8f2 --text-wrong-color ff5555 --separator-color f8f8f2 && swaymsg mode "default" && systemctl suspend
+    bindsym l exec swaylock -i ~/Pictures/wallpapers/MarinKitagawa.png --inside-color 282a36 --ring-color 50fa7b --key-hl-color ff79c6 --line-color f8f8f2 --text-color f8f8f2 --text-clear-color f8f8f2 --text-caps-lock-color ff79c6 --text-ver-color f8f8f2 --text-wrong-color ff5555 --separator-color f8f8f2 && swaymsg mode "default"
+
+    # Exit the mode when pressing Escape or Return
     bindsym Escape mode "default"
     bindsym Return mode "default"
 }
 
-# Logout, reboot, shutdown
-bindsym $mod+x mode "exit: [e]xit, [r]eboot, [s]hutdown, [l]ock"
 
-exec sway-tile
+
