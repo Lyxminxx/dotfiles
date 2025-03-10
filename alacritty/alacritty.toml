@@ -1,0 +1,43 @@
+[env]
+TERM = "xterm-256color"
+
+[window]
+opacity = 0.85  # Adjust for more/less transparency
+padding = { x = 10, y = 10 }
+decorations = "none"
+
+[font]
+normal = { family = "JetBrainsMono Nerd Font", style = "Regular" }
+bold = { family = "JetBrainsMono Nerd Font", style = "Bold" }
+italic = { family = "JetBrainsMono Nerd Font", style = "Italic" }
+bold_italic = { family = "JetBrainsMono Nerd Font", style = "Bold Italic" }
+size = 12
+
+[colors.primary]
+background = "#282a36"
+foreground = "#f8f8f2"
+
+[colors.cursor]
+text = "#282a36"
+cursor = "#f8f8f2"
+
+[colors.normal]
+black = "#000000"
+red = "#ff5555"
+green = "#50fa7b"
+yellow = "#f1fa8c"
+blue = "#bd93f9"
+magenta = "#ff79c6"
+cyan = "#8be9fd"
+white = "#bbbbbb"
+
+[colors.bright]
+black = "#555555"
+red = "#ff6e67"
+green = "#5af78e"
+yellow = "#f4f99d"
+blue = "#caa9fa"
+magenta = "#ff92d0"
+cyan = "#9aedfe"
+white = "#ffffff"
+

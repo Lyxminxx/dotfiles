@@ -1,0 +1,6 @@
+{
+  "snippets.userSnippetsDirectory": "~/AppData/Local/nvim/snippets",
+  "snippets.snippetSupport": true,
+  "coc.snippet.placeholderSupport": true
+}
+
