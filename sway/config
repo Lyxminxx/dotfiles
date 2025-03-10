@@ -131,12 +131,8 @@ for_window [class=".*"] border pixel 3
 gaps inner 8
 gaps outer 5
 
-# Autostart applications
+# Autostart
 exec_always swaybg -i ~/Pictures/wallpapers/MarinKitagawa.png -m fill
-# Window assignments (application specific workspaces and behaviors)
-#for_window [class="Pcmanfm"] floating enable resize set 900 500
-#for_window [class="Pavucontrol"] floating enable resize set 900 500
-#for_window [class="Blueman-manager"] floating enable resize set 900 500
 exec_always autotiling
 
 # Application bindings
