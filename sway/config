@@ -139,7 +139,7 @@ exec_always swaync
 bindsym $mod+d exec wofi --show drun
 bindsym $mod+t exec alacritty
 bindsym $mod+b exec flatpak run app.zen_browser.zen
-bindsym $mod+f exec nautilus
+bindsym $mod+f exec pcmanfm
 
 # Exit/Shutdown/Lock Menu
 mode "exit: [e]xit, [r]eboot, [s]hutdown, [l]ock" {
