@@ -12,6 +12,9 @@ exec --no-startup-id dex-autostart --autostart --environment sway
 # Window management settings
 floating_modifier $mod
 
+# Compose key
+input * xkb_options compose:rctrl
+
 # Keybindings
 # Focus management
 bindsym $mod+h focus left
