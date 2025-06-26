@@ -1,0 +1,40 @@
+set $mod Mod4
+
+bindsym $mod+Shift+r reload
+bindsym $mod+Shift+e exit
+bindsym $mod+Shift+space floating toggle
+floating_modifier $mod
+
+bindsym $mod+t exec alacritty
+bindsym $mod+b exec zen-browser
+bindsym $mod+f exec thunar
+bindsym $mod+d exec rofi -show drun
+bindsym $mod+x exec ~/.config/rofi/rofi-exit.sh
+bindsym $mod+q kill
+bindsym $mod+Shift+p exec .config/sway/scripts/display-menu.sh
+bindsym $mod+Period exec rofi -modi emoji -show emoji -kb-secondary-copy "" -kb-custom-1 Ctrl+c
+bindsym $mod+Shift+o exec .config/rofi/scriptLauncher.sh
+bindsym Print exec bash -c ' \
+  filename=~/Pictures/Screenshots/screenshot-$(date +%Y%m%d-%H%M%S).png && \
+  grim -g "$(slurp)" "$filename" && \
+  wl-copy < "$filename" && \
+  notify-send "Screenshot copied to clipboard" "$filename" \
+'
+bindsym $mod+Shift+f fullscreen
+
+# Brightness down
+bindsym XF86MonBrightnessDown exec brightnessctl set 10%-
+
+# Brightness up
+bindsym XF86MonBrightnessUp exec brightnessctl set +10%
+
+# Volume down (decrease by 5%)
+bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%
+
+
+# Volume up (increase by 5%)
+bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
+
+# Mute/unmute toggle
+bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
+

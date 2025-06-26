@@ -1,0 +1,109 @@
+* {
+  font-family: "FiraCode Nerd Font", monospace;
+  font-size: 13px;
+  background: transparent;
+  color: #f8f8f2;
+  border: none;
+  box-shadow: none;
+  text-shadow: none;
+}
+
+window#waybar {
+  background-color: #282a36;
+  border: none;
+}
+
+.modules-left,
+.modules-center,
+.modules-right {
+  margin: 0;
+  padding: 0;
+}
+
+/* Workspaces container */
+#workspaces {
+  margin: 0 8px;
+}
+
+/* Workspace buttons */
+#workspaces button {
+  background: transparent;
+  border: none;
+  color: #f8f8f2;
+  padding: 4px 10px;
+  margin-right: 4px;
+  outline: 1px solid #44475a;
+  font-weight: normal;
+  box-shadow: inset 0 -2px transparent;
+  border-radius: 0; /* flat corners */
+}
+
+#workspaces button:last-child {
+  margin-right: 0;
+}
+
+/* Active workspace */
+#workspaces button.focused {
+  color: #bd93f9;
+  outline-color: #bd93f9;
+  font-weight: bold;
+  box-shadow: inset 0 -2px #bd93f9;
+}
+
+#workspaces button:hover{
+  font-weight: bold;
+}
+/* Center clock styling */
+#clock {
+  min-width: 250px;
+  margin-left: 150px;
+  margin-right: 150px;
+  padding: 0 10px;
+  border-left: none;
+  border-right: none;
+}
+
+/* Right modules */
+#pulseaudio,
+#network,
+#battery,
+#backlight,
+#custom-notifications,
+#custom-weather,
+#custom-caffeine {
+  padding: 0 10px;
+  border-left: 1px solid #44475a;
+}
+
+#pulseaudio:hover,
+#network:hover,
+#battery:hover,
+#backlight:hover,
+#custom-notifications:hover,
+#custom-weather:hover,
+#custom-caffeine:hover{
+  outline-color: #bd93f9;
+  box-shadow: inset 0 -2px #bd93f9;
+}
+
+/* Battery colors */
+#battery.charging {
+  color: #50fa7b;
+}
+
+#battery.warning {
+  color: #f1fa8c;
+}
+
+#battery.critical {
+  color: #ff5555;
+}
+
+/* Muted volume color */
+#pulseaudio.muted {
+  color: #6272a4;
+}
+
+
+
+

@@ -1,0 +1,12 @@
+exec_always swaybg -i ~/dotfiles/wallpapers/dracula.jpg -m fill
+exec_always --no-startup-id udiskie -t &
+exec_always autotiling &
+exec_always bash -c 'killall mako; mako'
+exec_always ~/.config/sway/scripts/display-autoset.sh
+
+
+exec_always swayidle -w \
+    before-sleep 'swaymsg exec "swaylock -f"' \
+    timeout 300 'swaymsg exec "swaylock -f"' \
+    timeout 600 'swaymsg "output * power off"' \
+    resume 'swaymsg "output * power on"'

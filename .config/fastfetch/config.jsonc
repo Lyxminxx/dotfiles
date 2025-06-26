@@ -1,0 +1,56 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+
+  "logo": {
+    "type": "builtin",
+    "source": "arch_small",
+    "padding": {
+      "top": 1,
+      "left": 2
+    },
+    "color": {
+	    "1": "magenta",
+	    "2": "blue"
+    }
+  },
+
+  "display": {
+    "separator": " 🌺 ",
+    "color": {
+      "keys": "#ff79c6",
+      "title": "#8be9fd",
+      "separator": "#ffb6c1"
+    },
+    "key": {
+      "type": "icon",
+      "width": 14,
+      "paddingLeft": 2
+    },
+    "bar": {
+      "charElapsed": "★",
+      "charTotal": "☆",
+      "width": 15
+    },
+    "percent": {
+      "type": 3,
+      "color": {
+        "green": "#50fa7b",
+        "yellow": "#f1fa8c",
+        "red": "#ff5555"
+      }
+    }
+  },
+
+  "modules": [
+    { "type": "os",         "keyIcon": "󰌽" },   // Arch logo
+    { "type": "host",       "keyIcon": "󰍛" },   // Device
+    { "type": "kernel",     "keyIcon": "󰌽" },   // Linux symbol
+    { "type": "packages",   "keyIcon": "󰏖" },   // Box/package
+    { "type": "shell",      "keyIcon": "" },   // Terminal
+    { "type": "wm",         "keyIcon": "󰒓" },   // Window manager
+    { "type": "terminal",   "keyIcon": "" },   // Nerd terminal icon
+    { "type": "cpu",        "keyIcon": "" },   // CPU chip
+    { "type": "memory",     "keyIcon": "󰍛" }    // Memory module
+  ]
+}
+
