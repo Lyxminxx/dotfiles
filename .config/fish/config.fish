@@ -13,3 +13,6 @@ if status is-interactive
     alias fetch='fastfetch'
     alias ls='lsd -a'
 end
+
+# Created by `pipx` on 2025-06-27 10:45:24
+set PATH $PATH /home/madelen/.local/bin
