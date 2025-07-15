@@ -1,0 +1,57 @@
+[colors.primary]
+background = "#121212"       # dark background like your sway/bg
+foreground = "#e0e0e0"       # light gray foreground (white-ish)
+
+bright_foreground = "#ffffff"
+
+[colors.cursor]
+text = "#121212"             # cursor text matches bg
+cursor = "#e0e0e0"           # light cursor
+
+[colors.vi_mode_cursor]
+text = "CellBackground"
+cursor = "CellForeground"
+
+[colors.selection]
+text = "CellForeground"
+background = "#444444"       # medium gray selection bg
+
+[colors.normal]
+black = "#121212"            # background black
+red = "#e0e0e0"              # replaced red with light gray
+green = "#e0e0e0"            # replaced green with light gray
+yellow = "#e0e0e0"           # replaced yellow with light gray
+blue = "#e0e0e0"             # replaced blue with light gray
+magenta = "#e0e0e0"          # replaced magenta with light gray
+cyan = "#e0e0e0"             # replaced cyan with light gray
+white = "#e0e0e0"            # white-ish text
+
+[colors.bright]
+black = "#444444"            # brighter black = dark gray
+red = "#e0e0e0"              # light gray for all accents
+green = "#e0e0e0"
+yellow = "#e0e0e0"
+blue = "#e0e0e0"
+magenta = "#e0e0e0"
+cyan = "#e0e0e0"
+white = "#ffffff"            # bright white
+
+[colors.search.matches]
+foreground = "#444444"
+background = "#e0e0e0"
+
+[colors.search.focused_match]
+foreground = "#444444"
+background = "#bbbbbb"
+
+[colors.footer_bar]
+background = "#121212"
+foreground = "#e0e0e0"
+
+[colors.hints.start]
+foreground = "#121212"
+background = "#e0e0e0"
+
+[colors.hints.end]
+foreground = "#e0e0e0"
+background = "#121212"

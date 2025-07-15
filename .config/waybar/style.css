@@ -2,17 +2,18 @@
   font-family: "FiraCode Nerd Font", monospace;
   font-size: 13px;
   background: transparent;
-  color: #f8f8f2;
+  color: #e0e0e0; /* light gray text */
   border: none;
   box-shadow: none;
   text-shadow: none;
 }
 
 window#waybar {
-  background-color: #282a36;
+  background-color: #121212; /* dark gray background */
   border: none;
 }
 
+/* Remove margin/padding on module containers */
 .modules-left,
 .modules-center,
 .modules-right {
@@ -29,12 +30,12 @@ window#waybar {
 #workspaces button {
   background: transparent;
   border: none;
-  color: #f8f8f2;
+  color: #e0e0e0; /* light gray */
   padding: 4px 10px;
   margin-right: 4px;
-  outline: 1px solid #44475a;
+  outline: 1px solid #2a2a2a; /* subtle dark gray outline */
   font-weight: normal;
-  box-shadow: inset 0 -2px transparent;
+  box-shadow: inset 0 -2px transparent; /* removed red underline */
   border-radius: 0; /* flat corners */
 }
 
@@ -44,15 +45,18 @@ window#waybar {
 
 /* Active workspace */
 #workspaces button.focused {
-  color: #bd93f9;
-  outline-color: #bd93f9;
+  color: #e0e0e0; /* replaced red with light gray */
+  outline-color: #e0e0e0;
   font-weight: bold;
-  box-shadow: inset 0 -2px #bd93f9;
+  box-shadow: inset 0 -2px #e0e0e0; /* underline light gray */
 }
 
-#workspaces button:hover{
+#workspaces button:hover {
   font-weight: bold;
+  color: #e0e0e0; /* subtle hover effect with light gray */
+  outline-color: #e0e0e0;
 }
+
 /* Center clock styling */
 #clock {
   min-width: 250px;
@@ -61,6 +65,7 @@ window#waybar {
   padding: 0 10px;
   border-left: none;
   border-right: none;
+  color: #e0e0e0;
 }
 
 /* Right modules */
@@ -70,40 +75,33 @@ window#waybar {
 #backlight,
 #custom-notifications,
 #custom-weather,
-#custom-caffeine {
+#custom-caffeine,
+#tray {
   padding: 0 10px;
-  border-left: 1px solid #44475a;
+  border-left: 1px solid #2a2a2a; /* subtle divider */
+  color: #e0e0e0;
 }
 
 #pulseaudio:hover,
 #network:hover,
-#battery:hover,
 #backlight:hover,
 #custom-notifications:hover,
 #custom-weather:hover,
-#custom-caffeine:hover{
-  outline-color: #bd93f9;
-  box-shadow: inset 0 -2px #bd93f9;
+#custom-caffeine:hover {
+  outline-color: #e0e0e0; /* replaced red with light gray */
+  box-shadow: inset 0 -2px #e0e0e0;
+  color: #e0e0e0;
 }
 
-/* Battery colors */
+/* Battery colors — kept red/green/yellow as is */
 #battery.charging {
-  color: #50fa7b;
+  color: #50fa7b; /* nice green */
 }
 
 #battery.warning {
-  color: #f1fa8c;
+  color: #f1fa8c; /* soft yellow */
 }
 
 #battery.critical {
-  color: #ff5555;
+  color: #ff2d55; /* your red accent */
 }
-
-/* Muted volume color */
-#pulseaudio.muted {
-  color: #6272a4;
-}
-
-
-
-

@@ -1,0 +1,9 @@
+* {
+    font: "FiraCode Nerd Font 13";
+    background: #121212;
+    color: #e0e0e0;
+}
+
+window {
+    background-color: #121212;
+}

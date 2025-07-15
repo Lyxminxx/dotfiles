@@ -1,4 +1,4 @@
-exec_always swaybg -i ~/dotfiles/wallpapers/dracula.jpg -m fill
+exec_always swaybg -i ~/dotfiles/wallpapers/birds.jpg -m fill
 exec_always --no-startup-id udiskie -t &
 exec_always autotiling &
 exec_always bash -c 'killall mako; mako'

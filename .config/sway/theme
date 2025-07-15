@@ -4,15 +4,9 @@ smart_gaps off
 
 font pango:FiraCode Nerd Font 11
 
-# Borders - 4px solid
 default_border pixel 4
 default_floating_border pixel 4
 
-# Focused window border color (full purple outline)
-client.focused          #bd93f9 #bd93f9 #bd93f9 #bd93f9
-
-# Unfocused window border color (subtle dark purple)
+client.focused          #e0e0e0 #e0e0e0 #e0e0e0 #e0e0e0
 client.unfocused        #44475a #282a36 #44475a #44475a
-
-# Urgent window border color (red-ish)
 client.urgent           #ff5555 #44475a #ff5555 #ff5555
