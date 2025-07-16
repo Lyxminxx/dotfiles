@@ -9,17 +9,17 @@
       "left": 2
     },
     "color": {
-	    "1": "magenta",
-	    "2": "blue"
+      "1": "#ffffff",
+      "2": "#ffffff"
     }
   },
 
   "display": {
-    "separator": " 🌺 ",
+    "separator": " | ",
     "color": {
-      "keys": "#ff79c6",
-      "title": "#8be9fd",
-      "separator": "#ffb6c1"
+      "keys": "#ffffff",
+      "title": "#ffffff",
+      "separator": "#ffffff"
     },
     "key": {
       "type": "icon",
@@ -27,30 +27,29 @@
       "paddingLeft": 2
     },
     "bar": {
-      "charElapsed": "★",
-      "charTotal": "☆",
+      "charElapsed": "█",
+      "charTotal": "░",
       "width": 15
     },
     "percent": {
       "type": 3,
       "color": {
-        "green": "#50fa7b",
-        "yellow": "#f1fa8c",
-        "red": "#ff5555"
+        "green": "#ffffff",
+        "yellow": "#ffffff",
+        "red": "#ffffff"
       }
     }
   },
 
   "modules": [
-    { "type": "os",         "keyIcon": "󰌽" },   // Arch logo
-    { "type": "host",       "keyIcon": "󰍛" },   // Device
-    { "type": "kernel",     "keyIcon": "󰌽" },   // Linux symbol
-    { "type": "packages",   "keyIcon": "󰏖" },   // Box/package
-    { "type": "shell",      "keyIcon": "" },   // Terminal
-    { "type": "wm",         "keyIcon": "󰒓" },   // Window manager
-    { "type": "terminal",   "keyIcon": "" },   // Nerd terminal icon
-    { "type": "cpu",        "keyIcon": "" },   // CPU chip
-    { "type": "memory",     "keyIcon": "󰍛" }    // Memory module
+    { "type": "os",         "keyIcon": "󰌽" },
+    { "type": "host",       "keyIcon": "󰍛" },
+    { "type": "kernel",     "keyIcon": "󰌽" },
+    { "type": "packages",   "keyIcon": "󰏖" },
+    { "type": "shell",      "keyIcon": "" },
+    { "type": "wm",         "keyIcon": "󰒓" },
+    { "type": "terminal",   "keyIcon": "" },
+    { "type": "cpu",        "keyIcon": "" },
+    { "type": "memory",     "keyIcon": "󰍛" }
   ]
 }
-

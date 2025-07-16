@@ -55,3 +55,7 @@ background = "#e0e0e0"
 [colors.hints.end]
 foreground = "#e0e0e0"
 background = "#121212"
+
+[window]
+opacity = 0.85  # 1.0 is fully opaque, lower = more transparent
+
