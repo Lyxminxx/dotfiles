@@ -82,6 +82,7 @@ window#waybar {
   color: #e0e0e0;
 }
 
+#battery:hover,
 #pulseaudio:hover,
 #network:hover,
 #backlight:hover,

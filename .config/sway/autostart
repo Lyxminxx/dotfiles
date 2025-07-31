@@ -3,7 +3,8 @@ exec_always --no-startup-id udiskie -t &
 exec_always autotiling &
 exec_always bash -c 'killall mako; mako'
 exec_always ~/.config/sway/scripts/display-autoset.sh
-
+exec --no-startup-id solaar --window=hide
+exec_always --no-startup-id systemctl --user restart pipewire pipewire-pulse wireplumber
 
 exec_always swayidle -w \
     before-sleep 'swaymsg exec "swaylock -f"' \

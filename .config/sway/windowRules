@@ -1,1 +1,7 @@
+for_window [class="impala-float"] floating enable, resize set 800 600, move position center
 for_window [app_id="pavucontrol"] floating enable, resize set 800 600, move position center
+
+
+for_window [title="cam"] floating enable
+for_window [title="cam"] move position center
+

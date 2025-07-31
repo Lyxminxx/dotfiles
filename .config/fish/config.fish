@@ -11,7 +11,8 @@ if status is-interactive
         echo ""
     end
     alias fetch='fastfetch'
-    alias ls='lsd -a'
+    alias ls='lsd'
+    alias la='lsd -a'
     alias vim='nvim'
 end
 export GTK_THEME=MonoThemeDark

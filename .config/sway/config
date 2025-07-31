@@ -62,8 +62,7 @@ bindsym Mod4+Shift+Right move right
 
 ### INPUT ###
 input "type:keyboard" {
-    xkb_layout us
-    xkb_options "compose:ralt"
+    xkb_layout no
 }
 
 input "type:touchpad" {

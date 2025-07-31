@@ -29,8 +29,8 @@
     "format-ethernet": " {ifname}",
     "tooltip-format": "{ifname} via {gwaddr}\nIPv4: {ipaddr}",
     "format-disconnected": "⚠ Disconnected",
-    "on-click": "~/.config/rofi/rofi-wifi-menu.sh"
-  },
+    "on-click": "swaymsg 'exec alacritty --class impala-float -e impala'" 
+ },
 
   "battery": {
     "format": "{icon} {capacity}%",
