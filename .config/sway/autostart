@@ -1,3 +1,5 @@
+exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
+exec systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
 exec_always swaybg -i ~/dotfiles/wallpapers/birds.jpg -m fill
 exec_always --no-startup-id udiskie -t &
 exec_always autotiling &

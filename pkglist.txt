@@ -65,3 +65,4 @@ wtype
 xdg-user-dirs
 xorg-xwayland
 stow
+xdg-desktop-portal-wlr
