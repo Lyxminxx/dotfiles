@@ -45,12 +45,17 @@ bindsym XF86AudioPlay exec playerctl play-pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
-# Enter resize mode
-bindsym $mod+r mode "resize"
 
-# Define resize mode
+# Resize mode notifications
+set $resize_enter_notify notify-send " RESIZE MODE" "Use hjkl or arrow keys to resize" -t 1500
+set $resize_exit_notify notify-send "󰜺 NORMAL MODE" "Exited resize mode" -t 1000
+
+# Entering resize mode with notification
+bindsym $mod+r exec $resize_enter_notify; mode "resize"
+
+# Define the resize mode
 mode "resize" {
-    # Resize with vim keys (h/j/k/l)
+    # Resize with vim keys
     bindsym h resize shrink width 10px
     bindsym l resize grow width 10px
     bindsym j resize grow height 10px
@@ -62,17 +67,8 @@ mode "resize" {
     bindsym Down resize grow height 10px
     bindsym Up resize shrink height 10px
 
-    # Fine adjustments (optional: smaller steps)
-    bindsym Shift+h resize shrink width 2px
-    bindsym Shift+l resize grow width 2px
-    bindsym Shift+j resize grow height 2px
-    bindsym Shift+k resize shrink height 2px
-
-    # Exit resize mode
-    bindsym Escape mode "default"
-    bindsym $mod+r mode "default"
-
-    # Optional: show current mode in swaybar / notification
-    # You can use `swaymsg` + a notification tool if you want feedback here.
+    # Exit resize mode with notification
+    bindsym Escape exec $resize_exit_notify; mode "default"
+    bindsym $mod+r exec $resize_exit_notify; mode "default"
 }
 
