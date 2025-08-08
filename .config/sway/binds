@@ -7,8 +7,8 @@ floating_modifier $mod
 bindsym $mod+g exec .config/sway/scripts/toggle-gaps.sh
 
 bindsym $mod+t exec alacritty
-bindsym $mod+b exec flatpak run one.ablaze.floorp
-bindsym $mod+m exec flatpak run one.ablaze.floorp --new-window 'https://social.linux.pizza/publish'
+bindsym $mod+b exec brave
+bindsym $mod+m exec brave --new-window 'https://social.linux.pizza/publish'
 bindsym $mod+n exec alacritty -e nvim
 bindsym $mod+f exec thunar
 bindsym $mod+d exec rofi -show drun
