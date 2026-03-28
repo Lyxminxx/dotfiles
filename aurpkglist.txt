@@ -1,3 +1,0 @@
-rofi-emoji-git
-librewolf-bin
-swaylock-effects

@@ -1,0 +1,137 @@
+[
+    (
+        output: (
+            name: "eDP-1",
+            edid: Some((
+                manufacturer: ('L', 'E', 'N'),
+                product: 16445,
+                serial: None,
+                manufacture_week: 0,
+                manufacture_year: 2021,
+                model_year: None,
+            )),
+        ),
+        tiling_enabled: true,
+        id: Some("1ea3a2"),
+    ),
+    (
+        output: (
+            name: "eDP-1",
+            edid: Some((
+                manufacturer: ('L', 'E', 'N'),
+                product: 16445,
+                serial: None,
+                manufacture_week: 0,
+                manufacture_year: 2021,
+                model_year: None,
+            )),
+        ),
+        tiling_enabled: true,
+        id: Some("67039a"),
+    ),
+    (
+        output: (
+            name: "eDP-1",
+            edid: Some((
+                manufacturer: ('L', 'E', 'N'),
+                product: 16445,
+                serial: None,
+                manufacture_week: 0,
+                manufacture_year: 2021,
+                model_year: None,
+            )),
+        ),
+        tiling_enabled: true,
+        id: Some("996b92"),
+    ),
+    (
+        output: (
+            name: "eDP-1",
+            edid: Some((
+                manufacturer: ('L', 'E', 'N'),
+                product: 16445,
+                serial: None,
+                manufacture_week: 0,
+                manufacture_year: 2021,
+                model_year: None,
+            )),
+        ),
+        tiling_enabled: true,
+        id: Some("1407862"),
+    ),
+    (
+        output: (
+            name: "eDP-1",
+            edid: Some((
+                manufacturer: ('L', 'E', 'N'),
+                product: 16445,
+                serial: None,
+                manufacture_week: 0,
+                manufacture_year: 2021,
+                model_year: None,
+            )),
+        ),
+        tiling_enabled: true,
+        id: Some("fa100"),
+    ),
+    (
+        output: (
+            name: "eDP-1",
+            edid: Some((
+                manufacturer: ('L', 'E', 'N'),
+                product: 16445,
+                serial: None,
+                manufacture_week: 0,
+                manufacture_year: 2021,
+                model_year: None,
+            )),
+        ),
+        tiling_enabled: true,
+        id: Some("141ee11"),
+    ),
+    (
+        output: (
+            name: "eDP-1",
+            edid: Some((
+                manufacturer: ('L', 'E', 'N'),
+                product: 16445,
+                serial: None,
+                manufacture_week: 0,
+                manufacture_year: 2021,
+                model_year: None,
+            )),
+        ),
+        tiling_enabled: true,
+        id: Some("1a4836f"),
+    ),
+    (
+        output: (
+            name: "eDP-1",
+            edid: Some((
+                manufacturer: ('L', 'E', 'N'),
+                product: 16445,
+                serial: None,
+                manufacture_week: 0,
+                manufacture_year: 2021,
+                model_year: None,
+            )),
+        ),
+        tiling_enabled: true,
+        id: Some("11fd8a"),
+    ),
+    (
+        output: (
+            name: "eDP-1",
+            edid: Some((
+                manufacturer: ('L', 'E', 'N'),
+                product: 16445,
+                serial: None,
+                manufacture_week: 0,
+                manufacture_year: 2021,
+                model_year: None,
+            )),
+        ),
+        tiling_enabled: true,
+        id: Some("e36b9"),
+    ),
+]
