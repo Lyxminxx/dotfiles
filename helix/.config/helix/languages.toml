@@ -1,4 +1,4 @@
-
+# --- GO ---
 [[language]]
 name = "go"
 scope = "source.go"
@@ -9,15 +9,16 @@ auto-format = true
 formatter = { command = "gofmt" }
 language-servers = ["gopls"]
 
+# --- PYTHON ---
 [[language]]
 name = "python"
 scope = "source.python"
+roots = ["pyproject.toml", "setup.py", "setup.cfg", "requirements.txt"]
+auto-format = true
+formatter = { command = "black", args = ["--line-length", "88", "-"] }
+language-servers = ["pylsp"]
 
-[language.config.pylsp.plugins]
-pycodestyle = { enabled = true, ignore = ["E501"] }
-pyflakes = { enabled = true }
-mccabe = { enabled = true }
-
+# --- DJANGO ---
 [[language]]
 name = "htmldjango"
 scope = "source.python.django"
@@ -25,9 +26,7 @@ file-types = ["html"]
 roots = ["manage.py", "setup.py"]
 language-servers = ["djlsp"]
 
-[language-server.djlsp]
-command = "djlsp"
-
+# --- HTML ---
 [[language]]
 name = "html"
 scope = "text.html.basic"
@@ -38,6 +37,7 @@ auto-format = true
 formatter = { command = "prettier", args = ["--parser", "html"] }
 language-servers = ["html-languageserver"]
 
+# --- CSS ---
 [[language]]
 name = "css"
 scope = "source.css"
@@ -48,6 +48,7 @@ auto-format = true
 formatter = { command = "prettier", args = ["--parser", "css"] }
 language-servers = ["css-languageserver"]
 
+# --- JAVASCRIPT ---
 [[language]]
 name = "javascript"
 scope = "source.javascript"
@@ -58,6 +59,7 @@ auto-format = true
 formatter = { command = "prettier", args = ["--parser", "babel"] }
 language-servers = ["typescript-language-server"]
 
+# --- SHELL ---
 [[language]]
 name = "shell"
 scope = "source.shell"
@@ -68,11 +70,22 @@ auto-format = true
 formatter = { command = "shfmt" }
 language-servers = ["bash-language-server"]
 
+# --- LANGUAGE SERVER CONFIGURATIONS ---
+
 [language-server.gopls]
 command = "gopls"
 
 [language-server.pylsp]
 command = "pylsp"
+
+# PEP8 / pycodestyle settings for Python
+[language-server.pylsp.config.pylsp.plugins]
+pycodestyle = { enabled = true, ignore = ["E501"] }
+pyflakes = { enabled = true }
+mccabe = { enabled = true }
+
+[language-server.djlsp]
+command = "djlsp"
 
 [language-server.html-languageserver]
 command = "html-languageserver"
