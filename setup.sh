@@ -15,3 +15,4 @@ wget -O ~/Pictures/wall.png  https://gruvbox-wallpapers.pages.dev/thumbnails/ani
 echo Stow
 stow cosmic
 stow nvim
+stow fish
