@@ -16,3 +16,4 @@ echo Stow
 stow cosmic
 stow nvim
 stow fish
+stow helix

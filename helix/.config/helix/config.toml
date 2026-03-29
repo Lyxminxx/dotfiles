@@ -1,0 +1,19 @@
+theme = "gruvbox"
+
+[editor]
+true-color = true
+bufferline = "always"
+color-modes = true
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.whitespace]
+render = "all"
+characters = { space = "·", nbsp = "⍽", nnbsp = "⍽", tab = "→", newline = "↵" }
+
+[editor.indent-guides]
+render = true
+character = "│"

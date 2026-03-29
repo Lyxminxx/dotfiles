@@ -1,0 +1,91 @@
+
+[[language]]
+name = "go"
+scope = "source.go"
+injection-regex = "go"
+file-types = ["go"]
+roots = ["go.mod", "go.sum"]
+auto-format = true
+formatter = { command = "gofmt" }
+language-servers = ["gopls"]
+
+[[language]]
+name = "python"
+scope = "source.python"
+
+[language.config.pylsp.plugins]
+pycodestyle = { enabled = true, ignore = ["E501"] }
+pyflakes = { enabled = true }
+mccabe = { enabled = true }
+
+[[language]]
+name = "htmldjango"
+scope = "source.python.django"
+file-types = ["html"]
+roots = ["manage.py", "setup.py"]
+language-servers = ["djlsp"]
+
+[language-server.djlsp]
+command = "djlsp"
+
+[[language]]
+name = "html"
+scope = "text.html.basic"
+injection-regex = "html"
+file-types = ["html", "htm"]
+roots = []
+auto-format = true
+formatter = { command = "prettier", args = ["--parser", "html"] }
+language-servers = ["html-languageserver"]
+
+[[language]]
+name = "css"
+scope = "source.css"
+injection-regex = "css"
+file-types = ["css", "scss"]
+roots = []
+auto-format = true
+formatter = { command = "prettier", args = ["--parser", "css"] }
+language-servers = ["css-languageserver"]
+
+[[language]]
+name = "javascript"
+scope = "source.javascript"
+injection-regex = "javascript|jsx"
+file-types = ["js", "jsx", "mjs", "cjs"]
+roots = ["package.json", "tsconfig.json"]
+auto-format = true
+formatter = { command = "prettier", args = ["--parser", "babel"] }
+language-servers = ["typescript-language-server"]
+
+[[language]]
+name = "shell"
+scope = "source.shell"
+injection-regex = "shell|bash|sh|zsh"
+file-types = ["sh", "bash"]
+roots = []
+auto-format = true
+formatter = { command = "shfmt" }
+language-servers = ["bash-language-server"]
+
+[language-server.gopls]
+command = "gopls"
+
+[language-server.pylsp]
+command = "pylsp"
+
+[language-server.html-languageserver]
+command = "html-languageserver"
+args = ["--stdio"]
+
+[language-server.css-languageserver]
+command = "css-languageserver"
+args = ["--stdio"]
+
+[language-server.typescript-language-server]
+command = "typescript-language-server"
+args = ["--stdio"]
+
+[language-server.bash-language-server]
+command = "bash-language-server"
+args = ["start"]
