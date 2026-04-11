@@ -1,1 +1,8 @@
-{}
+{
+    (
+        modifiers: [
+            Super,
+        ],
+        key: "slash",
+    ): Disable,
+}
