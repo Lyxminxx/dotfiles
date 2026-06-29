@@ -2,6 +2,13 @@
     (
         modifiers: [
             Super,
+            Shift,
+        ],
+        key: "s",
+    ): System(Screenshot),
+    (
+        modifiers: [
+            Super,
         ],
         key: "slash",
     ): Disable,

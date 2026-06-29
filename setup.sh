@@ -31,3 +31,4 @@ echo Stow
 stow cosmic
 stow fish
 stow helix
+stow starship

@@ -17,3 +17,6 @@ characters = { space = "·", nbsp = "⍽", nnbsp = "⍽", tab = "→", newline =
 [editor.indent-guides]
 render = true
 character = "│"
+
+[keys.normal]
+"space" = { "d" = ":insert-output date +\"# %%Y-%%m-%%d%%n\"" }
