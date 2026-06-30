@@ -1,0 +1,6 @@
+inherits = "gruvbox"
+
+"ui.background" = {} 
+
+"ui.linenr" = {}
+"ui.linenr.selected" = {}

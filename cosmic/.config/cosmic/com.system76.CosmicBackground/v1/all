@@ -1,6 +1,6 @@
 (
     output: "all",
-    source: Path("/home/madelen/Downloads/wallScaled.png"),
+    source: Path("/home/madelen/Pictures/animeDark.png"),
     filter_by_theme: true,
     rotation_frequency: 300,
     filter_method: Lanczos,
